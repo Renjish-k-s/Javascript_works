@@ -1,0 +1,75 @@
+body
+{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 17%, rgba(148,233,202,1) 100%);
+    margin: 0;
+    padding: 0;
+   
+}
+.container
+{
+    background-color: red;
+    width:300px;
+    height: 50px;
+  
+   
+    display: flex;
+    margin: auto;
+ 
+}
+h1
+{
+    text-align: center;
+}
+.textx
+{
+    width: 75%;
+    height: 100%;
+    border-radius: 20px;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.btn
+{
+    width: 25%;
+    height: 100%;
+    float: right;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.list
+{
+    margin-left: 440px;
+    width: 100%;
+    list-style: none ;
+
+    align-items: center;
+    
+}
+li
+{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,161,29,1) 50%, rgba(252,176,69,1) 100%);
+    width: 25%;
+    text-align: center;
+    margin-top: 5px;
+    animation: 0.3s ease-in-out;
+}
+
+@keyframes silde
+{
+    from {
+        opacity: 0;
+
+        transform: rotateX(60deg) translateY(-10px);
+
+    }
+    to{
+        opacity: 1;
+
+        transform: rotateX(0deg) translateY(0px);
+    }
+}
