@@ -14,6 +14,10 @@ function additems()
     textbox.value= " "
     textbox.focus()
 
+    let itag =document.createElement("i")
+    itag.classList.add('glyphicon','glyphicon-trash')
+    console.log(itag)
+    li.appendChild(itag)
 
 
     //console.log(textboxvalue)
@@ -32,3 +36,4 @@ function keyhandler(event)
 btn.addEventListener("click",additems)
 
 textbox.addEventListener("keypress",keyhandler)
+

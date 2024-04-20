@@ -6,7 +6,7 @@ body
     padding: 0;
    
 }
-.container
+.cont
 {
     background-color: red;
     width:300px;
@@ -58,6 +58,7 @@ li
     margin-top: 5px;
     animation: 0.3s ease-in-out;
 }
+
 
 @keyframes silde
 {
