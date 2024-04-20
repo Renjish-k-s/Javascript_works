@@ -16,8 +16,10 @@ function additems()
 
     let itag =document.createElement("i")
     itag.classList.add('glyphicon','glyphicon-trash')
-    console.log(itag)
+   // console.log(itag)
     li.appendChild(itag)
+
+    
 
 
     //console.log(textboxvalue)
@@ -33,7 +35,26 @@ function keyhandler(event)
     }
 }
 
+
+function deleteitems(event)
+{
+     //console.log(event.target.classList[0]);
+
+    if(event.target.classList[0]==="glyphicon")
+    {
+            //alert('jdshjh');
+            let item = event.target.parentElement;
+            console.log(item)
+            item.remove();
+    }
+}
+
+
+
 btn.addEventListener("click",additems)
+
+ullist.addEventListener("click",deleteitems)
+
 
 textbox.addEventListener("keypress",keyhandler)
 
